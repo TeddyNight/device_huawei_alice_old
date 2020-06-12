@@ -14,14 +14,14 @@
 
 $(call inherit-product, $(LOCAL_PATH)/full_alice.mk)
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-PRODUCT_NAME := dot_alice
+PRODUCT_NAME := bootleg_alice
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
